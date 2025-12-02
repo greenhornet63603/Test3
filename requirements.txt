@@ -11,3 +11,4 @@ pycryptodome
 pytz
 httpx
 bs4
+flask
