@@ -1,7 +1,7 @@
 import os
 import threading
 from flask import Flask
-from pyrofork import Client
+from pyrogram import Client
 
 API_ID = int(os.environ.get("API_ID"))
 API_HASH = os.environ.get("API_HASH")
