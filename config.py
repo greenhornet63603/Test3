@@ -23,22 +23,21 @@ PREMIUM_LOGS = int(getenv("PREMIUM_LOGS", "-1002363250260"))
 import os
 from os import getenv
 # ---------------R---------------------------------
-API_ID = int(os.environ.get("API_ID", "24473318"))
+API_ID = int(os.environ.get("API_ID", "27400172"))
 # ------------------------------------------------
-API_HASH = os.environ.get("API_HASH", "e7dd0576c5ac0ff8f90971d6bb04c8f5")
+API_HASH = os.environ.get("API_HASH", "56d0a75c5f9a9de6beb5452aa63c2d36")
 # ----------------D--------------------------------
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8024530512:AAGB-R6nFuUErdxndZHJ1jGXuL6hsLqCynw")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8040470417:AAHM6Jqwy28x0-78UbdQtyQg500dzoBokqI")
 # -----------------A-------------------------------
-BOT_USERNAME = os.environ.get("RealTxtExtractorRooBot")
+BOT_USERNAME = os.environ.get("Noobkacpbot")
 # ------------------X------------------------------
-OWNER_ID = int(os.environ.get("OWNER_ID", "5840594311"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7540570087"))
 # ------------------X------------------------------
 
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5840594311").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "7540570087").split()))
 # ------------------------------------------------
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002519097490"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003475251323"))
 # ------------------------------------------------
-MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://mongodburl9721:rfNOuo4c1OSTZ7cs@cluster0.edezeww.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://greenhornet63603:CvnxnjzknPLxYOfo@cluster0.qif4g18.mongodb.net/?appName=Cluster0"")
 # -----------------------------------------------
-FORCE_SUB = int(os.environ.get("FORCE_SUB", "-1002595188554"))
-
+FORCE_SUB = int(os.environ.get("FORCE_SUB", "-1003475251323"))
