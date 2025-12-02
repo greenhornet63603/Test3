@@ -1,7 +1,8 @@
 import os
 import threading
+import asyncio
 from flask import Flask
-from pyrogram import Client
+from pyrofork import Client
 
 API_ID = int(os.environ.get("API_ID"))
 API_HASH = os.environ.get("API_HASH")
@@ -15,15 +16,24 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
+async def run_pyrogram():
+    # Start bot
+    await bot.start()
+    print("Bot Started Successfully")
+    await bot.idle()
+
 def start_bot():
-    bot.run()
+    # Create event loop for this thread (fixes your error)
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(run_pyrogram())
 
 # ------------------ Flask Keeper ------------------
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Bot Running Successfully!"
+    return "Bot & Flask Running Successfully!"
 
 if __name__ == "__main__":
     # Start Telegram bot in background thread
