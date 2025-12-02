@@ -10,5 +10,5 @@ Unidecode
 pycryptodome
 pytz
 httpx
-bs4
+beautifulsoup4
 flask
